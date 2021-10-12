@@ -31,5 +31,15 @@ namespace VentasExpress
         {
             Environment.Exit(0);
         }
+
+        private void lbl_Ingresar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
