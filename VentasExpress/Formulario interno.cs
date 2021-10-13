@@ -15,6 +15,12 @@ namespace VentasExpress
         public Formulario_interno()
         {
             InitializeComponent();
+            if()
+        }
+
+        private void Formulario_interno_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

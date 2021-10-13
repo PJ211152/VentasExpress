@@ -8,7 +8,7 @@ namespace VentasExpress
 {
     class Usuario
     {
-        protected string usuario1;
+        protected string usuario1="admin";
 
         public string Usuario1
         {
@@ -16,7 +16,7 @@ namespace VentasExpress
             set { usuario1 = value; }
         }
 
-        protected string contraseña1;
+        protected string contraseña1= "admin123";
 
         public string Contraseña1
         {
@@ -24,7 +24,7 @@ namespace VentasExpress
             set { contraseña1 = value; }
         }
 
-        protected string usuario2;
+        protected string usuario2= "vendedor";
 
         public string Usuario2
         {
@@ -32,7 +32,7 @@ namespace VentasExpress
             set { usuario2 = value; }
         }
 
-        protected string contraseña2;
+        protected string contraseña2= "Vendedor123";
 
         public string Contraseña2
         {
@@ -40,7 +40,7 @@ namespace VentasExpress
             set { contraseña2 = value; }
         }
 
-        protected string usuario3;
+        protected string usuario3= "Invitado";
 
         public string Usuario3
         {
@@ -48,7 +48,7 @@ namespace VentasExpress
             set { usuario1 = value; }
         }
 
-        protected string contraseña3;
+        protected string contraseña3= "invitadoinvitado123";
 
         public string Contraseña3
         {
@@ -56,5 +56,12 @@ namespace VentasExpress
             set { contraseña3 = value; }
         }
 
+        protected string usuarioactual;
+
+        public string Usuarioactual
+        {
+            get { return usuarioactual; }
+            set { usuarioactual = value; }
+        }
     }
 }

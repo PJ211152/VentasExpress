@@ -12,9 +12,12 @@ namespace VentasExpress
 {
     public partial class Form1 : Form
     {
+
+        Usuario Datos = new Usuario();
         public Form1()
         {
             InitializeComponent();
+           
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -24,7 +27,7 @@ namespace VentasExpress
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
