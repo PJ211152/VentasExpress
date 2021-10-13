@@ -22,5 +22,10 @@ namespace VentasExpress
         {
 
         }
+
+        private void Formulario_interno_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            new Form1().Show();
+        }
     }
 }

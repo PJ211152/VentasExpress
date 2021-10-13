@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace VentasExpress
 {
@@ -27,29 +28,40 @@ namespace VentasExpress
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Formulario_interno form2 = new Formulario_interno();
+
             if(txb_Usuario.Text==Datos.Usuario1 && txb_Contraseña.Text == Datos.Contraseña1)
             {
                 Datos.Usuario1 = Datos.Usuarioactual;
-                new Formulario_interno().Show();
                 this.Hide();
+                form2.ShowDialog();
+                this.Show();
             }
             else if(txb_Usuario.Text == Datos.Usuario2 && txb_Contraseña.Text == Datos.Contraseña2)
             {
                 Datos.Usuario2 = Datos.Usuarioactual;
-                new Formulario_interno().Show();
                 this.Hide();
+                form2.ShowDialog();
+                this.Show();
             }
             else if (txb_Usuario.Text == Datos.Usuario3 && txb_Contraseña.Text == Datos.Contraseña3)
             {
                 Datos.Usuario3 = Datos.Usuarioactual;
-                new Formulario_interno().Show();
                 this.Hide();
+                form2.ShowDialog();
+                this.Show();
             }
+            else
+            {
+                MessageBox.Show("la contraseña o el usuario estan incorrectos");
+            }
+
+            
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            Application.Exit();
         }
 
         private void lbl_Ingresar_Click(object sender, EventArgs e)
