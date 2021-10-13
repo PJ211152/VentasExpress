@@ -27,7 +27,24 @@ namespace VentasExpress
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if(txb_Usuario.Text==Datos.Usuario1 && txb_Contraseña.Text == Datos.Contraseña1)
+            {
+                Datos.Usuario1 = Datos.Usuarioactual;
+                new Formulario_interno().Show();
+                this.Hide();
+            }
+            else if(txb_Usuario.Text == Datos.Usuario2 && txb_Contraseña.Text == Datos.Contraseña2)
+            {
+                Datos.Usuario2 = Datos.Usuarioactual;
+                new Formulario_interno().Show();
+                this.Hide();
+            }
+            else if (txb_Usuario.Text == Datos.Usuario3 && txb_Contraseña.Text == Datos.Contraseña3)
+            {
+                Datos.Usuario3 = Datos.Usuarioactual;
+                new Formulario_interno().Show();
+                this.Hide();
+            }
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
