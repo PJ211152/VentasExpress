@@ -50,8 +50,10 @@
             // 
             this.txb_Contraseña.Location = new System.Drawing.Point(93, 188);
             this.txb_Contraseña.Name = "txb_Contraseña";
+            this.txb_Contraseña.PasswordChar = '*';
             this.txb_Contraseña.Size = new System.Drawing.Size(177, 20);
             this.txb_Contraseña.TabIndex = 1;
+            this.txb_Contraseña.UseSystemPasswordChar = true;
             // 
             // lbl_Usuario
             // 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Security.Cryptography;
 
 namespace VentasExpress
 {
@@ -30,23 +31,25 @@ namespace VentasExpress
         {
             Formulario_interno form2 = new Formulario_interno();
 
+            
+
             if(txb_Usuario.Text==Datos.Usuario1 && txb_Contraseña.Text == Datos.Contraseña1)
             {
-                Datos.Usuario1 = Datos.Usuarioactual;
+                txb_Usuario.Text = Datos.Usuarioactual;
                 this.Hide();
                 form2.ShowDialog();
                 this.Show();
             }
             else if(txb_Usuario.Text == Datos.Usuario2 && txb_Contraseña.Text == Datos.Contraseña2)
             {
-                Datos.Usuario2 = Datos.Usuarioactual;
+                txb_Usuario.Text = Datos.Usuarioactual;
                 this.Hide();
                 form2.ShowDialog();
                 this.Show();
             }
             else if (txb_Usuario.Text == Datos.Usuario3 && txb_Contraseña.Text == Datos.Contraseña3)
             {
-                Datos.Usuario3 = Datos.Usuarioactual;
+                txb_Usuario.Text = Datos.Usuarioactual;
                 this.Hide();
                 form2.ShowDialog();
                 this.Show();
@@ -72,6 +75,11 @@ namespace VentasExpress
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

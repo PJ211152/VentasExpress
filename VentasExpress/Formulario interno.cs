@@ -14,9 +14,12 @@ namespace VentasExpress
     {
 
         Ventas ventas = new Ventas();
+        Usuario Datos = new Usuario();
         public Formulario_interno()
         {
             InitializeComponent();
+            string name = Datos.Usuarioactual;
+            label2.Text="Bienvenido";
             ventas.agregar();
             ventas.agregarP();
             ventas.agregarS();
@@ -70,6 +73,8 @@ namespace VentasExpress
         private void btn_Ordenar_Click(object sender, EventArgs e)
         {
 
+            
+       
         }
 
         private void btn_Consultar_Click(object sender, EventArgs e)
